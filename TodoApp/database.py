@@ -7,8 +7,6 @@ from sqlalchemy.ext.declarative import declarative_base
 # If you want to store the database file elsewhere, use an absolute path, e.g. 'sqlite:////full/path/to/todos.db'.
 SQLALCHEMY_DATABASE_URL = 'sqlite:///./todos.db'
 
-enine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
-
 # Create the SQLAlchemy engine. connect_args is required for SQLite when using multiple threads
 # in the same application, such as with FastAPI or other async frameworks.
 engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})
