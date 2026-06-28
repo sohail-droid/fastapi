@@ -1,0 +1,7 @@
+sqlalchemy
+uvicorn
+fastapi
+passlib        #envrypt and hash passwords this framework consist of bcrypt also.
+bcrypt==4.0.1
+python-multipart
+python-jose[cryptography]      # for returning tokens
